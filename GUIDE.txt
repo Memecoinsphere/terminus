@@ -1,0 +1,47 @@
+Terminus — guide d'utilisation (français)
+=========================================
+
+Installation sur iPhone / iPad
+------------------------------
+1. Ouvrez le site dans Safari.
+2. Appuyez sur le bouton Partager (carré avec flèche vers le haut).
+3. Choisissez « Sur l'écran d'accueil », puis Ajouter.
+4. Lancez « Terminus » depuis l'écran d'accueil (mode autonome).
+
+Déverrouillage (geste caché)
+----------------------------
+Au lancement, l'écran affiche une surface neutre (horloge sobre).
+Ce n'est PAS l'écran de code.
+
+Pour révéler l'écran de code :
+  → Double-tapez rapidement près du HAUT de l'écran
+    (bandeau supérieur, environ les 15 % du haut).
+
+Puis saisissez le code : 6767
+
+Code d'accès
+------------
+Code actuel : 6767
+
+Pour le changer, éditez dans app.js la constante clairement marquée :
+  // ===== PASSCODE (change here) =====
+  const PASSCODE = "6767";
+
+Le terminal
+-----------
+Tapez une commande puis Entrée. Commandes disponibles :
+  help, clear, date, whoami, echo, uname, ls, pwd, id, history
+Toute autre commande affiche « command not found: <cmd> ».
+
+IMPORTANT : c'est un BAC À SABLE LOCAL, une simple simulation.
+Il n'y a aucun vrai shell, aucun accès au système de l'appareil,
+aucun appel réseau, aucune analytique. Les réponses sont fixes.
+
+Verrouillage
+------------
+Le bouton rouge « Lock » (en haut à droite du terminal) renvoie à la
+surface leurre (horloge). Le geste caché est à nouveau nécessaire.
+
+Fichiers
+--------
+Tout est statique (HTML/CSS/JS), sans étape de build ni CDN externe.
